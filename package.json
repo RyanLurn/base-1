@@ -2,6 +2,7 @@
   "name": "base-1",
   "type": "module",
   "scripts": {
+    "start": "tsx --env-file-if-exists=.env.local src/index.ts",
     "fmt": "oxfmt --disable-nested-config",
     "fmt:check": "oxfmt --check --disable-nested-config",
     "lint": "oxlint --disable-nested-config",
@@ -14,6 +15,7 @@
     "oxfmt": "0.66.0",
     "oxlint": "1.81.0",
     "oxlint-tsgolint": "7.0.2001",
+    "tsx": "4.23.13",
     "typescript": "7.0.2",
     "vitest": "5.0.0"
   },

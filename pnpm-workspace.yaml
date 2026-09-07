@@ -1,6 +1,8 @@
 # Dependency settings
 savePrefix: ""
 enableGlobalVirtualStore: true
+allowBuilds:
+  esbuild: true
 
 # Supply chain attack mitigation
 minimumReleaseAge: 1440
