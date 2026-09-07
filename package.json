@@ -1,6 +1,22 @@
 {
   "name": "base-1",
   "type": "module",
+  "scripts": {
+    "fmt": "oxfmt --disable-nested-config",
+    "fmt:check": "oxfmt --check --disable-nested-config",
+    "lint": "oxlint --disable-nested-config",
+    "lint:fix": "oxlint --fix --disable-nested-config",
+    "check": "pnpm run lint && pnpm run fmt:check",
+    "fix": "pnpm run lint:fix && pnpm run fmt"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.1",
+    "oxfmt": "0.66.0",
+    "oxlint": "1.81.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -8,10 +24,5 @@
       "onFail": "warn"
     }
   },
-  "packageManager": "pnpm@12.3.4",
-  "devDependencies": {
-    "@types/node": "26.4.1",
-    "typescript": "7.0.2",
-    "vitest": "5.0.0"
-  }
+  "packageManager": "pnpm@12.3.4"
 }
