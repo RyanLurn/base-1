@@ -8,7 +8,8 @@
     "lint": "oxlint --disable-nested-config",
     "lint:fix": "oxlint --fix --disable-nested-config",
     "check": "pnpm run lint && pnpm run fmt:check",
-    "fix": "pnpm run lint:fix && pnpm run fmt"
+    "fix": "pnpm run lint:fix && pnpm run fmt",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@types/node": "26.4.1",
