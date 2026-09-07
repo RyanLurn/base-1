@@ -1,0 +1,12 @@
+{
+  "name": "base-1",
+  "type": "module",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.3.4",
+      "onFail": "warn"
+    }
+  },
+  "packageManager": "pnpm@12.3.4"
+}
